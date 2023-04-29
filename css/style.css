@@ -1,0 +1,18 @@
+
+
+/* hero  */
+.hero{
+   min-width: 575px; /*card  overlay no puede ajustar el contenido del texto cuando se excede - manual de bootstrap*/
+   
+   height: 500px;
+   
+}
+
+.hero-card {
+max-height: 500px;
+}
+
+/* manual y procedimientos  */
+.icono-manual-proc{
+    font-size: 2.5rem;
+}

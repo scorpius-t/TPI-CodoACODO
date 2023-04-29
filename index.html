@@ -19,32 +19,125 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top fs-2">
+    <!-- barra navegacion  -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img class="rounded-circle" src="./media/img/nav-logo.png" width="50" alt="Logo de la pagina"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav w-100 align-items-center text-center">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#">Manual y <br> procedimientos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="#">Formularios</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
+                <a class="nav-link" href="#">Documentación <br> emitida</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Documentos <br> de clientes</a>
+              </li>
+              <li class="nav-item ms-auto ">
+                <a class="nav-link disabled"><i class="bi bi-box-arrow-in-right"></i> Login</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
 
-    <h1>Hello, world!</h1>
+      <!-- seccion hero calidad -->
+    <section class="hero position-relative bg-light">
+      <div class="hero-card container-fluid d-flex flex-column text-center text-wrap position-absolute top-50 start-0 translate-middle-y">
+        <div class="card text-bg-dark hero-card  border-0">
+          <img src="/media/img/hero-background.jpg" class="card-img hero-card" alt="imagen de fondo logo iso iram">
+          <div class="card-img-overlay text-dark bg-light bg-opacity-75 hero-card">
+            <h2 class="card-title">Departamento Gestión de la Calidad</h5>
+            <p class="card-text">Misión del DGC: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit augue quis ligula dapibus imperdiet. Maecenas et ante vestibulum, dapibus quam eget, lobortis neque. Quisque faucibus neque in dictum dictum. Morbi pulvinar commodo ipsum eu ultricies. Etiam condimentum nibh elementum felis dictum, eu eleifend libero aliquet</p>
+            <p class="card-text"><small>Ultima auditoria: Q3 2022</small></p>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <!-- seccion manual y procedimientos -->
+    <section class="manual-proc bg-dark text-light">
+      <div class="container text-center">
+        <div class="row">
+          <!-- Manual  -->
+          <div class="col-12 col-md-4">
+            <i class="bi bi-book icono-manual-proc" ></i>
+            <p> Manual de Calidad</p>
+            <p>El manual de calidad establece los lineamientos generales del departamento, roles de la estructura e interacción con los clientes</p>
+            <div class="contenedor-badges">
+              <span class="badge text-bg-primary">IRAM</span>
+              <span class="badge text-bg-primary">Uso interno</span>
+              <span class="badge text-bg-success">Publico</span>
+            </div>
+            <a href="" target="_blank" rel="noopener noreferrer">
+              <button type="button" class="btn btn-info mt-2">
+                Abrir
+                <i class="bi bi-arrow-right-circle-fill"></i>
+              </button>
+            </a>
+          </div>
+          <!-- Procedimiento general  -->
+          <div class="col-12 col-md-4">
+            <i class="bi bi-book icono-manual-proc" ></i>
+            <p> Manual de Calidad</p>
+            <p>El manual de calidad establece los lineamientos generales del departamento, roles de la estructura e interacción con los clientes</p>
+            <div class="contenedor-badges">
+              <span class="badge text-bg-primary">IRAM</span>
+              <span class="badge text-bg-primary">Uso interno</span>
+              <span class="badge text-bg-success">Publico</span>
+            </div>
+            <a href="" target="_blank" rel="noopener noreferrer">
+              <button type="button" class="btn btn-info mt-2">
+                Abrir
+                <i class="bi bi-arrow-right-circle-fill"></i>
+              </button>
+            </a>
+          </div>
+          <!-- Procedimiento operativo  -->
+          <div class="col-12 col-md-4">
+            <i class="bi bi-book icono-manual-proc" ></i>
+            <p> Manual de Calidad</p>
+            <p>El manual de calidad establece los lineamientos generales del departamento, roles de la estructura e interacción con los clientes</p>
+            <div class="contenedor-badges">
+              <span class="badge text-bg-primary">IRAM</span>
+              <span class="badge text-bg-primary">Uso interno</span>
+              <span class="badge text-bg-success">Publico</span>
+            </div>
+            <a href="" target="_blank" rel="noopener noreferrer">
+              <button type="button" class="btn btn-info mt-2">
+                Abrir
+                <i class="bi bi-arrow-right-circle-fill"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- seccion formularios -->
+    <section class="formularios">
+
+    </section>
+
+    <!-- seccion documentos clientes  -->
+    <section class="docs-clientes">
+
+    </section>
+
+
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   </body>
 </html>
