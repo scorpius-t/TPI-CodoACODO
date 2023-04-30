@@ -29,19 +29,19 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav w-100 align-items-center text-center">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
+                <a class="nav-link" aria-current="page" href="#hero">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Manual y <br> procedimientos</a>
+                <a class="nav-link" href="#manual-prc">Manual y <br> procedimientos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Formularios</a>
+                <a class="nav-link" href="#formularios">Formularios</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Documentación <br> emitida</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Documentos <br> de clientes</a>
+                <a class="nav-link" href="#docs-clientes">Documentos <br> de clientes</a>
               </li>
               <li class="nav-item ms-auto ">
                 <a class="nav-link disabled"><i class="bi bi-box-arrow-in-right"></i> Login</a>
@@ -52,7 +52,7 @@
       </nav>
 
       <!-- seccion hero calidad -->
-    <section class="hero position-relative bg-light">
+    <section class="hero position-relative bg-light" id="hero">
       <div class="hero-card container-fluid d-flex flex-column text-center text-wrap position-absolute top-50 start-0 translate-middle-y">
         <div class="card text-bg-dark hero-card  border-0">
           <img src="./media/img/hero-background.jpg" class="card-img hero-card" alt="imagen de fondo logo iso iram">
@@ -67,20 +67,20 @@
     </section>
 
     <!-- seccion manual y procedimientos -->
-    <section class="manual-proc bg-dark text-light">
+    <section class="manual-proc bg-dark text-light" id="manual-proc">
       <div class="container text-center">
-        <div class="row">
+        <div class="row border-light border-1 h-100">
           <!-- Manual  -->
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-md-4 border ">
             <i class="bi bi-book icono-manual-proc" ></i>
-            <p> Manual de Calidad</p>
-            <p>El manual de calidad establece los lineamientos generales del departamento, roles de la estructura e interacción con los clientes</p>
+            <p> Manual <br> de Calidad</p>
+            <p>El manual de calidad establece la misión del departamento, roles y estructura</p>
             <div class="contenedor-badges">
               <span class="badge text-bg-primary">IRAM</span>
               <span class="badge text-bg-primary">Uso interno</span>
               <span class="badge text-bg-success">Publico</span>
             </div>
-            <a href="" target="_blank" rel="noopener noreferrer">
+            <a href="./media/files/EjemploPDF.pdf" target="_blank" rel="noopener noreferrer">
               <button type="button" class="btn btn-info mt-2">
                 Abrir
                 <i class="bi bi-arrow-right-circle-fill"></i>
@@ -88,16 +88,16 @@
             </a>
           </div>
           <!-- Procedimiento general  -->
-          <div class="col-12 col-md-4">
-            <i class="bi bi-book icono-manual-proc" ></i>
-            <p> Manual de Calidad</p>
-            <p>El manual de calidad establece los lineamientos generales del departamento, roles de la estructura e interacción con los clientes</p>
+          <div class="col-12 col-md-4 border" >
+            <i class="bi bi-file-earmark-ppt icono-manual-proc" ></i>
+            <p> Procedimientos <br> Generales</p>
+            <p>Los PG son documentos que establecen el funcionamiento interno de la organización</p>
             <div class="contenedor-badges">
               <span class="badge text-bg-primary">IRAM</span>
               <span class="badge text-bg-primary">Uso interno</span>
               <span class="badge text-bg-success">Publico</span>
             </div>
-            <a href="" target="_blank" rel="noopener noreferrer">
+            <a href="./media/files/EjemploPDF.pdf" target="_blank" rel="noopener noreferrer">
               <button type="button" class="btn btn-info mt-2">
                 Abrir
                 <i class="bi bi-arrow-right-circle-fill"></i>
@@ -105,16 +105,16 @@
             </a>
           </div>
           <!-- Procedimiento operativo  -->
-          <div class="col-12 col-md-4">
-            <i class="bi bi-book icono-manual-proc" ></i>
-            <p> Manual de Calidad</p>
-            <p>El manual de calidad establece los lineamientos generales del departamento, roles de la estructura e interacción con los clientes</p>
+          <div class="col-12 col-md-4 border">
+            <i class="bi bi-card-checklist icono-manual-proc" ></i>
+            <p> Procedimientos Operativos <br> Estandarizados</p>
+            <p>Los POE son procedimientos que establecen como llevar a cabo tareas técnicas</p>
             <div class="contenedor-badges">
-              <span class="badge text-bg-primary">IRAM</span>
+              <span class="badge text-bg-primary">DGC</span>
               <span class="badge text-bg-primary">Uso interno</span>
-              <span class="badge text-bg-success">Publico</span>
+              <span class="badge text-bg-danger">Privado</span>
             </div>
-            <a href="" target="_blank" rel="noopener noreferrer">
+            <a href="./media/files/EjemploPDF.pdf" target="_blank" rel="noopener noreferrer">
               <button type="button" class="btn btn-info mt-2">
                 Abrir
                 <i class="bi bi-arrow-right-circle-fill"></i>
@@ -127,12 +127,35 @@
     </section>
 
     <!-- seccion formularios -->
-    <section class="formularios">
-
+    <section class="formularios" id="formularios">
+      <div class="container-md py-5">
+        <div class="row">
+          <div class="col text-center">
+            <h2>Formularios vigentes</h2>
+          </div>
+          </div>
+          <div class="row">
+          <div class="col py-5">
+            <div class="list-group">
+              <a href="./media/files/EjemploDownload.docx" class="list-group-item list-group-item-action">Informe Técnico   <span class="badge bg-info rounded-pill">Rev 3</span></a>
+              <a href="./media/files/EjemploDownload.docx" class="list-group-item list-group-item-action">Nota de Comunicación   <span class="badge bg-info rounded-pill">Rev 1</span></a>
+              <a href="./media/files/EjemploDownload.docx" class="list-group-item list-group-item-action">Memo interno   <span class="badge bg-info rounded-pill">Rev 2</span></a>
+              <a href="./media/files/EjemploDownload.docx" class="list-group-item list-group-item-action">Minuta de reunión   <span class="badge bg-info rounded-pill">Rev 0</span></a>          
+              <a href="./media/files/EjemploDownload.docx" class="list-group-item list-group-item-action">Planilla de horas de proyecto   <span class="badge bg-info rounded-pill">Rev 0</span></a>
+              <a href="./media/files/EjemploDownload.docx" class="list-group-item list-group-item-action">Formulario de retiro de equipamiento   <span class="badge bg-info rounded-pill">Rev 1</span></a>
+              <a href="./media/files/EjemploDownload.docx" class="list-group-item list-group-item-action">Autorización de gastos extraordinarios   <span class="badge bg-info rounded-pill">Rev 6</span></a>
+              <a href="./media/files/EjemploDownload.docx" class="list-group-item list-group-item-action">Aviso de vacaciones   <span class="badge bg-info rounded-pill">Rev 1</span></a>
+              <a href="./media/files/EjemploDownload.docx" class="list-group-item list-group-item-action">Solicitud de nuevo equipamiento   <span class="badge bg-info rounded-pill">Rev 1</span></a>
+              <a href="./media/files/EjemploDownload.docx" class="list-group-item list-group-item-action">Perfil de puesto   <span class="badge bg-info rounded-pill">Rev 0</span></a> 
+            </div>
+            </div>
+          </div>
+      </div>
+    </div>
     </section>
 
     <!-- seccion documentos clientes  -->
-    <section class="docs-clientes">
+    <section class="docs-clientes" id="docs-clientes">
 
     </section>
 
