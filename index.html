@@ -29,19 +29,19 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav w-100 align-items-center text-center">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#hero">Home</a>
+                <a class="nav-link" aria-current="page" href="./index.html#hero">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#manual-prc">Manual y <br> procedimientos</a>
+                <a class="nav-link" href="./index.html#manual-prc">Manual y <br> procedimientos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#formularios">Formularios</a>
+                <a class="nav-link" href="./index.html#formularios">Formularios</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Documentación <br> emitida</a>
+                <a class="nav-link" href="./docs-emitidos.html">Documentación <br> emitida</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#docs-clientes">Documentos <br> de clientes</a>
+                <a class="nav-link" href="./index.html#docs-clientes">Documentos <br> de clientes</a>
               </li>
               <li class="nav-item ms-auto ">
                 <a class="nav-link disabled"><i class="bi bi-box-arrow-in-right"></i> Login</a>
@@ -57,7 +57,7 @@
         <div class="card text-bg-dark hero-card  border-0">
           <img src="./media/img/hero-background.jpg" class="card-img hero-card" alt="imagen de fondo logo iso iram">
           <div class="card-img-overlay text-dark bg-light bg-opacity-75 hero-card">
-            <h2 class="card-title">Departamento Gestión de la Calidad</h5>
+            <h2 class="card-title">Departamento Gestión de Calidad</h5>
             <p class="card-text">Misión del DGC: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit augue quis ligula dapibus imperdiet. Maecenas et ante vestibulum, dapibus quam eget, lobortis neque. Quisque faucibus neque in dictum dictum. Morbi pulvinar commodo ipsum eu ultricies. Etiam condimentum nibh elementum felis dictum, eu eleifend libero aliquet</p>
             <p class="card-text"><small>Ultima auditoria: Q3 2022</small></p>
           </div>
@@ -127,7 +127,7 @@
     </section>
 
     <!-- seccion formularios -->
-    <section class="formularios" id="formularios">
+    <section class="formularios bg-light" id="formularios">
       <div class="container-md py-5">
         <div class="row">
           <div class="col text-center">
@@ -155,9 +155,94 @@
     </section>
 
     <!-- seccion documentos clientes  -->
-    <section class="docs-clientes" id="docs-clientes">
+    <section class="docs-clientes bg-dark text-center" id="docs-clientes">
+      <h2 class="text-light pt-4"> Documentación de clientes</h2>
+      <div class="container">
+        <div id="carouselExampleCaptions" class="carousel slide h-75 ms-auto py-2" data-bs-ride="false">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./media/img/cliente-1.jpg" class="d-block w-100 opacity-50" alt="Imagen fabirca metalmecanica">
+              <div class="carousel-caption d-block">
+                <h5 class="">Fabrica metalmecánica S.A.</h5>
+                <p>Instrucciones de fabricación, formularios de control, calibraciones.</p>
+                <!-- El objetivo es abrir una carpeta de almacenamiento local ya que el numero de documentos es elevado y se actualiza frecuentemente -->
+                <a href="./media/files/" target="_blank" rel="noopener noreferrer">
+                  <button type="button" class="btn btn-light mt-2">
+                    Abrir
+                    <i class="bi bi-arrow-right-circle-fill"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./media/img/cliente-2.jpg" class="d-block w-100 opacity-50" alt="imagen generador de energia">
+              <div class="carousel-caption d-block">
+                <h5>Generador de energía S.A.</h5>
+                <p>Manuales de operación e instrucciones de control.</p>
+                <a href="./media/files/" target="_blank" rel="noopener noreferrer">
+                  <button type="button" class="btn btn-light mt-2">
+                    Abrir
+                    <i class="bi bi-arrow-right-circle-fill"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./media/img/cliente-3.jpg" class="d-block w-100 opacity-50" alt="imagen industria quimica">
+              <div class="carousel-caption d-block">
+                <h5>Empresa química S.A.</h5>
+                <p>Instrucciones de fabricación, POE, PON, QA/QC</p>
+                <a href="./media/files/" target="_blank" rel="noopener noreferrer">
+                  <button type="button" class="btn btn-light mt-2">
+                    Abrir
+                    <i class="bi bi-arrow-right-circle-fill"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
 
     </section>
+
+    <footer class="bg-light d-flex flex-column align-items-center justify-content-between">
+      <i class="bi bi-patch-check-fill icono-footer text-info" ></i>
+      <h2>Departamento Gestion de Calidad</h3>
+      <h4>Empresa S.A.</h2>
+      <div class="footer-redes-contacto d-flex flex-wrap justify-content-center">
+        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-twitter m-3"></i>
+        </a>
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-facebook m-3"></i>
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-linkedin m-3"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-instagram m-3"></i>
+        </a>
+        <a href="mailto:calidad@empresa.com.noenviar" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-envelope-at m-3"></i>
+        </a>
+      </div>
+      <p>Av. Siempre Viva 742 - Springfield</p>
+
+    </footer>
 
 
     

@@ -24,3 +24,33 @@ max-height: 500px;
 .formularios {
 height: 600px;
 }
+
+/* docs clientes  */
+
+.docs-clientes {
+    height: 600px;
+}
+
+.carousel-item img {
+    object-fit: contain;
+    object-position: center;
+    overflow: hidden;
+    height:50vh;
+}
+
+
+/* pie de pagina  */
+
+footer{
+  min-height: 300px;
+}
+
+.icono-footer{
+    font-size: 4rem;
+    
+}
+
+.footer-redes-contacto{
+    font-size: 3rem;
+    
+}
