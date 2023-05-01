@@ -2,7 +2,7 @@
 
 /* hero  */
 .hero{
-   min-width: 575px; /*card  overlay no puede ajustar el contenido del texto cuando se excede - manual de bootstrap*/
+   /* min-width: 575px; card  overlay no puede ajustar el contenido del texto cuando se excede - manual de bootstrap */
    
    height: 500px;
    
@@ -54,3 +54,40 @@ footer{
     font-size: 3rem;
     
 }
+
+/* responsivo  */
+@media screen and (max-width: 600px) {
+
+    .table {
+    font-size: 0.75rem;
+    }
+        
+    
+}
+@media screen and (max-width: 575px) {
+
+.hero-card .card-title {
+font-size: 1rem;
+}
+.hero-card p {
+    font-size: 0.75rem;
+    }
+    
+
+}
+
+@media screen and (max-width: 485px) {
+
+    .hero-card .card-title {
+    font-size: 0.75rem;
+    }
+
+    .hero-card p {
+        font-size: 0.5rem;
+    }
+        
+    .table {
+    font-size: 0.3rem;
+    }
+}
+
