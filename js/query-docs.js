@@ -1,3 +1,40 @@
+document.getElementById("inTicket-BtnResumen").addEventListener("click", calculoPrecio);
+
+function calculoPrecio(){
+    let precio=200.0;
+    let selectDescuento=document.getElementById("inTicket-Categoria")
+    let descuento= 0.0;
+    let errorDto=false;
+    switch(selectDescuento.options[selectDescuento.selectedIndex].value){
+        case 'General':
+            break;
+        case 'Estudiante':
+            descuento=0.8;
+            break;
+        case 'Trainee':
+            descuento=0.5;
+            break;
+        case 'Junior':
+            descuento=0.2;
+            break;
+        default:
+            descuento=0;
+            errorDto=true;
+            console.log('select invalido' +selectDescuento.options[selectDescuento.selectedIndex].value);
+    
+    }
+
+    let cantidad= parseInt(document.getElementById("inTicket-Cantidad").value);
+    precio=precio * (1-descuento) * cantidad;
+
+    if (errorDto){
+        document.getElementById("inTicket-Resultado").innerHTML="Seleccione tipo de entrada";    
+    } else{
+    document.getElementById("inTicket-Resultado").innerHTML= "Total a pagar: "+precio.toFixed(2);
+    }
+    
+}
+
 function readFile() {
     var e = document.getElementById("tipo-consulta");
     

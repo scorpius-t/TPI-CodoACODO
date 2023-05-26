@@ -21,7 +21,7 @@
     <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="./js/query-docs.js"></script>
+   
   </head>
   <body>
     <!-- barra navegacion  -->
@@ -79,7 +79,36 @@
       <p>Demo accediendo a archivo csv. La version final realizará consultas con más opciones en formulario para filtros y login a una base de datos en MSSQLServer</p>
 
     </section>
-
+<!-- seccion demo compra entradas -->
+<section class="compra-entradas bg-light" id="compra-entradas">
+  <form action="">
+    <h3 class="text-center">Valor entrada general: $200</h3>
+    <div class="col-12 d-flex py-3">
+      <label for="inTicket-Nombre" class="form-label">Nombre </label>
+      <input type="text" class="form-control mx-3" id="inTicket-Nombre" value="" required>
+      <label for="inTicket-Apellido" class="form-label">Apellido </label>
+      <input type="text" class="form-control mx-3" id="inTicket-Apellido" value="" required>
+    </div>
+    <div class="d-flex p-3 ">
+      <label for="inTicket-Email" class="form-label">Correo: </label>
+      <input type="email" class="form-control mx-3" id="inTicket-Email" value="" required placeholder="correo@example.com">
+      <label for="inTicket-Cantidad" class="form-label">Cantidad </label>
+      <input type="number" class="form-control mx-3" id="inTicket-Cantidad" value="1" min="1" required>
+      <select class="form-select mX-3" aria-label="Default select example" id="inTicket-Categoria" required>
+        <option selected value="No definido">Categoria </option>
+        <option value="General">General</option>
+        <option value="Estudiante">Estudiante - 80% OFF</option>
+        <option value="Trainee">Trainee - 50% OFF</option>
+        <option value="Junior">Junior - 15% OFF</option>
+      </select>
+    </div>
+    <div class="col 12 d-flex py-3">
+      <button class="btn btn-primary col-6 m-3" type="reset" id="inTicket-BtnReset">Borrar</button>
+      <button class="btn btn-primary col-6 m-3" type="button" id="inTicket-BtnResumen">Resumen</button>
+    </div>
+   </form>
+  <h4 id="inTicket-Resultado" class="text-center">Total a pagar: </h4>
+</section>
     <footer class="bg-light d-flex flex-column align-items-center justify-content-between">
       <i class="bi bi-patch-check-fill icono-footer text-info" ></i>
       <h2>Departamento Gestion de Calidad</h3>
@@ -106,7 +135,7 @@
     </footer>
 
 
-    
+    <script type="text/javascript" src="./js/query-docs.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   </body>
 </html>
