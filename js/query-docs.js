@@ -15,7 +15,7 @@ function calculoPrecio(){
             descuento=0.5;
             break;
         case 'Junior':
-            descuento=0.2;
+            descuento=0.15;
             break;
         default:
             descuento=0;
